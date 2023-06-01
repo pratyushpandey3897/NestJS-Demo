@@ -1,7 +1,7 @@
 import { Controller, Get, Req, Post, HttpCode, Param, Body } from '@nestjs/common';
 import { Request } from 'express';
-import { CreateCatDto } from '../create-cat.dto';
-import { Cat } from 'src/cat/cat.interface';
+import { CreateCatDto } from './dto/create-cat.dto';
+import { Cat } from 'src/cats/interfaces/cat.interface';
 import { CatsService } from './cats.service';
 
 @Controller('cats')
